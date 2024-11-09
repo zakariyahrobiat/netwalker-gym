@@ -29,11 +29,22 @@ tr.innerHTML=`
 										font-size: 6px;">view membership history</button>
 										
 `
+const row = document.createElement("tr")
+row. innerHTML=`
+<td>${count}</td>
+<div class="table-container">${dob.value} <span>${fullName.value}</div></td>
+<td>6 Months</td>
+<td>NX152369</td>
+`
 tBody.appendChild(tr)
+document.querySelector(".table-body").appendChild(row)
 count++
 }
 
 function openBtn(){
-    console.log("open");
+    document.querySelector(".table-modal").classList.add("show-table-modal")
     
 }
+document.querySelector(".close").addEventListener("click",()=>{
+		document.querySelector(".table-modal").classList.remove("show-table-modal")	
+})

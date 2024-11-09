@@ -23,7 +23,7 @@
     font-size: 10px;
     font-weight: 500; 
   } 
-  .wrapper td {
+  .wrapper td, .show-table-modal td{
     padding: 3px 5px ; 
     border: 2px solid #E5E5E5 ;
     text-align: left; 
@@ -42,7 +42,7 @@
   padding-bottom: 3rem;
   height: full;
   } 
-  .modaBox .gym-modal h1{
+  .modaBox .gym-modal h1 ,.table-modal h1{
     font-size: 10px;
     font-weight:600;
     color: white;
@@ -51,9 +51,30 @@
    
   }
   .table-container{
-  display:flex; flex-direction: column;  justify-content: center; align-items: start;
+  display:flex; flex-direction: column;  justify-content: center; align-items: start; font-size: 10px;
   }
   .table-container span{
     background: #5B5B5B; color:white; font-weight: 400; border-radius: 5px;font-size: 10px;padding: 3px 6px;
   }
-  
+  .table-modal{
+    display: none;
+  }
+  .show-table-modal{
+    display: block;
+    position: absolute;
+    top: 35vh;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.25) ;
+    width: 30vw;
+    right: 4%;
+  }
+  .show-table-modal th{
+    color: #8F8989;
+    padding: 5px;     
+    border: none;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   text-align: left;
+   font-size: 10px;
+   font-weight: 500; 
+  }
