@@ -21,7 +21,19 @@ tr.innerHTML=`
 <button style="background: #a12b2b; padding: 3px 6px; width:auto; margin:0; font-weight: 400; border-radius: 5px;font-size: 10px;">Physio Note</>
 </div>
 </td>
+<button onclick="openBtn()" style="position: absolute; background: #a12b2b; left: 75%; top: 0.2rem;
+										padding: 3px 6px;
+										font-weight: 400;
+										margin: 0 0 2px 0;
+										border-radius: 5px; width: auto;
+										font-size: 6px;">view membership history</button>
+										
 `
 tBody.appendChild(tr)
 count++
+}
+
+function openBtn(){
+    console.log("open");
+    
 }

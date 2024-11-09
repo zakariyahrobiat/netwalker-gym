@@ -33,7 +33,7 @@
     vertical-align: top;
   }
   .modaBox{
-    margin-bottom: 10rem;
+   padding-top: 0;
   } 
   .modaBox .gym-modal{
     position: absolute; background-color: white; top: 50vh; left: 50%; transform: translateX(-50%); width: 50vw;
@@ -43,7 +43,7 @@
   height: full;
   } 
   .modaBox .gym-modal h1{
-    font-size: 14px;
+    font-size: 10px;
     font-weight:600;
     color: white;
     background-color: #A12B2B;
