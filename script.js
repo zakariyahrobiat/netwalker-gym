@@ -4,10 +4,14 @@ const plan = document.querySelector(".plan")
 const phoneNumber= document.querySelector(".phone-number")
 const dob = document.querySelector(".date-of-birth")
 const initialEmptyRow = document.querySelector("tr > td[colspan='6']");
+const initialEmptyRow2 = document.querySelector("tr > td[colspan='4']");
 count = 1
 function saveBtn(){
     if (initialEmptyRow) {
         initialEmptyRow.parentNode.remove();
+    }
+	if (initialEmptyRow2) {
+        initialEmptyRow2.parentNode.remove();
     }
 const tr= document.createElement("tr")
 tr.innerHTML=`
@@ -32,9 +36,9 @@ tr.innerHTML=`
 const row = document.createElement("tr")
 row. innerHTML=`
 <td>${count}</td>
-<div class="table-container">${dob.value} <span>${fullName.value}</div></td>
-<td>6 Months</td>
-<td>NX152369</td>
+<td><div class="table-wrapper">${dob.value} <span>${fullName.value}</div></td>
+<td><div class="table-wrapper">6 Months <span>${dob.value}</div></td>
+<td><div class="table-wrapper">NX152369</div></td>
 `
 tBody.appendChild(tr)
 document.querySelector(".table-body").appendChild(row)
