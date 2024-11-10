@@ -43,6 +43,7 @@ row. innerHTML=`
 tBody.appendChild(tr)
 document.querySelector(".table-body").appendChild(row)
 count++
+document.querySelector(".gym-modal").classList.remove("show-gym-modal")
 }
 
 function openBtn(){
@@ -52,3 +53,7 @@ function openBtn(){
 document.querySelector(".close").addEventListener("click",()=>{
 		document.querySelector(".table-modal").classList.remove("show-table-modal")	
 })
+function showForm(){
+	
+document.querySelector(".gym-modal").classList.add("show-gym-modal")
+}
