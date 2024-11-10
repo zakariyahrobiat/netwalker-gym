@@ -7,6 +7,7 @@ const initialEmptyRow = document.querySelector("tr > td[colspan='6']");
 const initialEmptyRow2 = document.querySelector("tr > td[colspan='4']");
 count = 1
 function saveBtn(){
+	
     if (initialEmptyRow) {
         initialEmptyRow.parentNode.remove();
     }
@@ -43,6 +44,10 @@ row. innerHTML=`
 tBody.appendChild(tr)
 document.querySelector(".table-body").appendChild(row)
 count++
+fullName.value=""
+phoneNumber.value = "";
+    dob.value = "";
+    plan.value = "";
 document.querySelector(".gym-modal").classList.remove("show-gym-modal")
 }
 
